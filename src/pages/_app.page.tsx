@@ -1,3 +1,4 @@
+import '@/lib/dayjs'
 import { globalStyles } from '@/styles/global'
 import { Roboto } from '@next/font/google'
 import { SessionProvider } from 'next-auth/react'
