@@ -29,7 +29,7 @@ export default async function handle(
   const referenceDate = dayjs(String(date))
   const isPastDate = referenceDate.endOf('day').isBefore(new Date())
 
-  if (!isPastDate) {
+  if (isPastDate) {
     return res.status(200).json({ availability: [] })
   }
 
